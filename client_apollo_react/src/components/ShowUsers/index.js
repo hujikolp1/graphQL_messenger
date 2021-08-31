@@ -19,7 +19,7 @@ const ShowUsers = ({ session }) => (
 
     <div>
       <h2>Other Users</h2>
-      {session && session.me && <div> All Users Here </div>}
+      {session && session.me && <div>  </div>}
     </div>
 
     <Query
@@ -27,8 +27,7 @@ const ShowUsers = ({ session }) => (
     > 
       {({ data, loading, error, fetchMore }) => {
 
-        console.log('DATA: ', data.users)
-        if (!data) {
+        if (!data.users) {
           return (
             <div>
               There are no users ...
@@ -49,12 +48,21 @@ const ShowUsers = ({ session }) => (
             </div>
           );
         }
-        if (data) {
+        if (data) {    
           return (
             <div>
-              {/* {data.users[1].username} */}
               {data.users.map(i => {
-                return <li>{i.username}</li>
+                if(session.me && (session.me.id !== i.id)) {
+                  return (
+                    <div style={{border:'1px solid black',marginBottom:'7px'}}>
+                      <div>Username: <span style={{fontWeight:'bold'}}>{i.username}</span></div>
+                      <div>Email: {i.email}</div>
+                      <div>Avatar :) </div>
+                      <div>Online?</div> 
+                      <div>Direct Message? <button>Open</button></div>
+                    </div>
+                  )
+                }
               })}
             </div>
             

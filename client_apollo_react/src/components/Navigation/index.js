@@ -30,6 +30,9 @@ const NavigationAuth = ({ session }) => (
         </li>
       )}
     <li>
+      <Link to={routes.DIRECT_MESSAGES}>Direct Messages</Link>
+    </li>
+    <li>
       <SignOutButton />
     </li>
   </ul>

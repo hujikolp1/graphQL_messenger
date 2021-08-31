@@ -73,7 +73,7 @@ class MessageCreate extends Component {
               value={text}
               onChange={this.onChange}
               type="text"
-              placeholder="Your message ..."
+              placeholder="A message for all to see ..."
             />
             <button type="submit">Send</button>
 

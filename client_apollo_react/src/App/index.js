@@ -6,6 +6,7 @@ import MessageBoard from '../components/MessageBoard';
 import SignUpPage from '../components/SignUp';
 import SignInPage from '../components/SignIn';
 import AccountPage from '../components/Account';
+import DirectMessages from '../components/DirectMessages';
 import AdminPage from '../components/Admin';
 import withSession from '../components/Session/withSession';
 
@@ -38,6 +39,11 @@ const App = ({ session, refetch }) => (
         exact
         path={routes.ACCOUNT}
         component={() => <AccountPage />}
+      />
+      <Route
+        exact
+        path={routes.DIRECT_MESSAGES}
+        component={() => <DirectMessages />}
       />
       <Route
         exact
