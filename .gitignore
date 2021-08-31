@@ -1,0 +1,8 @@
+logfile
+
+client_apollo_react/.env
+client_apollo_react/node_modules/
+
+server_apollo_express_postgresql/.env
+server_apollo_express_postgresql/node_modules/
+
