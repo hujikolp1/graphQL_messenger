@@ -5,4 +5,6 @@ client_apollo_react/node_modules/
 
 server_apollo_express_postgresql/.env
 server_apollo_express_postgresql/node_modules/
+server_apollo_express_postgresqllogfile
+server_apollo_express_postgresql/postgreSQL_guides
 
