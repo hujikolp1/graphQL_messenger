@@ -6,6 +6,10 @@
 * PostgreSQL
 * Sequelize 
 
+#### Software Requirements
+* Node.js
+* NPM 
+
 ## Installation and Running
 
 #### Client 
