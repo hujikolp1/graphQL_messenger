@@ -1,4 +1,5 @@
 # Fullstack GraphQL Messenger 
+Credits for starter code go to Robin Wieruch https://github.com/rwieruch
 
 #### Technology Used
 * React.js
